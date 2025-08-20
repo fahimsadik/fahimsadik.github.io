@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Fahim Sadik landing page.">
+    
+    <title>Fahim Sadik</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + FS main styles -->
+	<link rel="stylesheet" href="assets/css/fs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle JS (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("nDW_fmbHfQPvq8itx"); // Replace with your actual Public Key
+   })();
+</script>
+
+
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item">
+  <a href="https://www.facebook.com/fahimsadikbabu/" target="_blank">
+    <i class="ti-facebook" aria-hidden="true"></i>
+  </a>
+</li>
+<li class="social-item">
+  <a href="https://x.com/FahimSadik82927" target="_blank">
+    <i class="ti-twitter" aria-hidden="true"></i>
+  </a>
+</li>
+<li class="social-item">
+  <a href="mailto:fahimsadik9@gmail.com">
+    <i class="ti-email" aria-hidden="true"></i>
+  </a>
+</li>
+<li class="social-item">
+  <a href="https://www.instagram.com/mr._great_guy/" target="_blank">
+    <i class="ti-instagram" aria-hidden="true"></i>
+  </a>
+</li>
+<li class="social-item">
+  <a href="https://github.com/fahimsadik" target="_blank">
+    <i class="ti-github" aria-hidden="true"></i>
+  </a>
+</li>
+<li class="social-item">
+  <a href="https://www.linkedin.com/in/fahim-sadik-143795182" target="_blank">
+    <i class="ti-linkedin" aria-hidden="true"></i>
+  </a>
+</li>
+
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Fahim Sadik</h1>
+				<h6 class="header-mono" id="typing"></h6>
+				</br>
+                <button class="btn btn-primary btn-rounded" onclick="printResume()">
+  <i class="ti-printer pr-2"></i> Print Resume
+</button>
+
+<script>
+function printResume() {
+  // Replace with the path to your PDF
+  const pdfPath = "assets\resume\resume.pdf";
+  
+  // Open the PDF in a new tab
+  const win = window.open(pdfPath, '_blank');
+  
+  // Trigger print when PDF loads
+  win.onload = function() {
+    win.print();
+  };
+}
+</script>
+
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                  <img src="assets/imgs/avatar.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Fahim Sadik</h5>
+                        <div class="brand-subtitle">Game Developer | UI/UX Design | IoT Developer | Network Engineer</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#references" class="nav-link">References</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Add this in your <head> -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section class="container-fluid">
+  <div id="about" class="row about-section">
+
+    <!-- Who am I -->
+    <div class="col-lg-4 about-card" data-aos="fade-right" data-aos-duration="1000">
+      <h3 class="font-weight-light">Who am I?</h3>
+      <span class="line mb-5"></span>
+      <h5 class="mb-3">A Game Developer, UI/UX Developer, IoT Developer, Network Engineer.</h5>
+      <p class="mt-20">Computer Science graduate with hands-on experience in software development, game development, IoT development and computer networking through academic projects and self-driven initiatives. Passionate about building practical, real-world solutions and continuously expanding technical expertise. Seeking a software development internship or entry-level role to contribute to a forward-thinking team and grow within the tech industry.</p>
+      <a href="assets/resume/resume.pdf" download>
+        <button class="btn btn-outline-danger">
+          <i class="icon-down-circled2"></i> Download My CV
+        </button>
+      </a>
+    </div>
+
+    <!-- Personal Info -->
+    <div class="col-lg-4 about-card" data-aos="fade-up" data-aos-duration="1200">
+      <h3 class="font-weight-light">Personal Info</h3>
+      <span class="line mb-5"></span>
+      <ul class="mt40 info list-unstyled">
+        <li><span>Birthdate</span> : 07/25/2002</li>
+        <li><span>Email</span> : fahimsadik9@gmail.com</li>
+        <li><span>Email</span> : fahim.sadik.cse@ulab.edu.bd</li>
+        <li><span>Phone</span> : +880 1890 244471</li>
+        <li><span>Phone</span> : +880 1571402221</li>
+        <li><span>Address</span> :  44/T Mitaly Road, Zigatola, Dhanmondi, Dhaka-1205.</li>
+      </ul>
+      <ul class="social-icons pt-3 d-flex gap-2 flex-wrap">
+        <li><a href="https://www.facebook.com/fahimsadikbabu/" target="_blank"><i class="ti-facebook"></i></a></li>
+        <li><a href="https://x.com/FahimSadik82927" target="_blank"><i class="ti-twitter"></i></a></li>
+        <li><a href="mailto:fahimsadik9@gmail.com"><i class="ti-email"></i></a></li>
+        <li><a href="https://www.instagram.com/mr._great_guy/" target="_blank"><i class="ti-instagram"></i></a></li>
+        <li><a href="https://github.com/fahimsadik" target="_blank"><i class="ti-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/fahim-sadik-143795182" target="_blank"><i class="ti-linkedin"></i></a></li>
+      </ul>
+    </div>
+
+    <!-- My Expertise -->
+    <div class="col-lg-4 about-card" data-aos="fade-left" data-aos-duration="1000">
+      <h3 class="font-weight-light">My Expertise</h3>
+      <span class="line mb-5"></span>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-1 text-danger pt-1"><i class="fas fa-gamepad icon-lg"></i></div>
+        <div class="col-10 ml-auto mr-3">
+          <h6>Game Developer</h6>
+          <p class="subtitle">Passionate about designing 2D and 3D games that engage and entertain. Skilled in game mechanics, storytelling, and interactive experiences. Looking forward to creating innovative gameplay and immersive worlds.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-1 text-danger pt-1"><i class="fas fa-microchip icon-lg"></i></div>
+        <div class="col-10 ml-auto mr-3">
+          <h6>IoT Developer</h6>
+          <p class="subtitle">Focused on connecting devices and building smart solutions for real-world problems. Experienced in IoT sensors, microcontrollers, and automation projects. Always exploring ways to make technology more efficient and accessible.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-1 text-danger pt-1"><i class="fas fa-palette icon-lg"></i></div>
+        <div class="col-10 ml-auto mr-3">
+          <h6>UI/UX Design</h6>
+          <p class="subtitle">Creating intuitive, user-friendly, and visually appealing interfaces. Skilled in wireframing, prototyping, and user experience research. Dedicated to designing experiences that feel natural and engaging.</p>
+          <hr>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-1 text-danger pt-1"><i class="fas fa-network-wired icon-lg"></i></div>
+        <div class="col-10 ml-auto mr-3">
+          <h6>Networking</h6>
+          <p class="subtitle">Building reliable and efficient network systems for smooth communication. Experienced in configuring networks, troubleshooting, and security practices. Passionate about optimizing connectivity and system performance.</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Add this before closing </body> -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // Animation happens only once when scrolling down
+    mirror: false,
+  });
+</script>
+
+    <!--Resume Section-->
+    <!-- Add this in <head> if not already -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section class="section" id="resume">
+    <div class="container">
+        <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+        <div class="row">
+
+            <!-- Experience -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="card shadow-sm mb-4 hover-shadow">
+                    <div class="card-header bg-white">
+                        <div class="mt-2">
+                            <h4>Experience</h4>
+                            <span class="line"></span>  
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">3D Graphics Designer</h6>
+                        <p><strong>Intvill Limited (2018 - 2020)</strong></p>
+                        <p class="subtitle">Lead 3D Designer, creating high-quality 3D models optimized for 3D printing. Collaborated with clients and managed end-to-end design workflows.</p>
+                        <hr>
+                        <h6 class="title text-danger">Volunteer Experience</h6>
+                        <p><strong>Organizing Secretary at ULAB Computer Programming Club (2022-2023)</strong></p>
+                        <p class="subtitle">Managed events such as Dawat-E-Iftar, Take Off Programming Contest, and orientation programs for CSE freshers.</p>
+                        <hr>
+                        <h6 class="title text-danger">Awards</h6>
+                        <p><strong>1st Runner-up at Poster Presentation (2025)</strong></p>
+                        <p class="subtitle">Achieved 2nd Place in the final capstone project poster presentation at CSE Fest 2025, ULAB.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1200">
+                <div class="card shadow-sm mb-4 hover-shadow">
+                    <div class="card-header bg-white">
+                        <div class="mt-2">
+                            <h4>Education</h4>
+                            <span class="line"></span>  
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h6 class="title text-danger">B.Sc in Computer Science & Engineering (2021 - 2025)</h6>
+                        <p><strong>University of Liberal Arts Bangladesh (ULAB), Dhaka</strong></p>
+                        <p class="subtitle">CGPA: 3.44 (Till Spring 2025)</p>
+                        <hr>
+                        <h6 class="title text-danger">H.S.C | 2018-2020 | Science</h6>
+                        <p><strong>Birshrestha Noor Mohammad Public College, Dhaka</strong></p>
+                        <p class="subtitle">GPA: 5.00</p>
+                        <hr>
+                        <h6 class="title text-danger">S.S.C | 2018 | Science</h6>
+                        <p><strong>Birshrestha Noor Mohammad Public College, Dhaka</strong></p>
+                        <p class="subtitle">GPA: 5.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills & Languages -->
+            <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
+
+                <!-- Technical Skills -->
+                <div class="card mb-3 shadow-sm hover-shadow">
+                    <div class="card-header bg-white">
+                        <h4 class="mt-2">Technical Skills</h4>
+                        <span class="line"></span>
+                    </div>
+                    <div class="card-body pb-2">
+                        <h6 class="title text-danger">Programming Languages</h6>
+                        <p>C, C++, C#, Java, HTML & CSS, JavaScript, PHP, SQL</p>
+
+                        <h6 class="title text-danger">Web Development Tools</h6>
+                        <p>VS Code, Git, GitHub</p>
+
+                        <h6 class="title text-danger">Software & Engines</h6>
+                        <p>IntelliJ IDEA, Cisco, Unreal Engine, Unity, Proteus</p>
+
+                        <h6 class="title text-danger">Design Tools</h6>
+                        <p>Adobe Photoshop, Audition, Canva, Figma</p>
+                    </div>
+                </div>
+
+                <!-- Languages -->
+                <div class="card mb-3 shadow-sm hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-white">
+                        <h4 class="mt-2">Languages</h4>
+                        <span class="line"></span>
+                    </div>
+                    <div class="card-body pb-2">
+                        <p>English, Bangla, Hindi</p>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="card mb-3 shadow-sm hover-shadow" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card-header bg-white">
+                        <h4 class="mt-2">Soft Skills</h4>
+                        <span class="line"></span>
+                    </div>
+                    <div class="card-body pb-2">
+                        <p>Presentation, Communication, Planning, Organization, Creative Problem-Solving, Teamwork, Active Listening, Adaptability, Analytical Thinking</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Add at the end of body -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    mirror: false,
+  });
+</script>
+
+<!-- Optional CSS for hover effect -->
+<style>
+.hover-shadow:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2) !important;
+}
+</style>
+
+	
+	<!-- Include AOS CSS in <head> if not already -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<section class="section" id="field-of-interest">
+    <div class="container">
+        <h2 class="mb-5 pb-4"><span class="text-danger">Field</span> Of Interest</h2>
+        <div class="row">
+
+            <!-- Software Development -->
+            <div class="col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
+                <div class="card mb-5 shadow-sm hover-scale">
+                    <div class="card-header has-icon">
+                        <i class="ti-desktop text-danger"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Software Development</h5>
+                        <p>Basic foundation in Object-Oriented Programming (OOP) with hands-on experience in Java and JavaScript throughout university courses. Interested in building scalable, maintainable, and efficient software solutions, contributing to both frontend and backend development projects.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Development -->
+            <div class="col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
+                <div class="card mb-5 shadow-sm hover-scale">
+                    <div class="card-header has-icon">
+                        <i class="ti-game text-danger"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">Game Development</h5>
+                        <p>Skilled in 2D game design and development, with a strong interest in transitioning to 3D game development. Focused on learning advanced 3D game mechanics, immersive environments, and interactive experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IT & Networking -->
+            <div class="col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card mb-5 shadow-sm hover-scale">
+                    <div class="card-header has-icon">
+                        <i class="ti-server text-danger"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">IT & Networking</h5>
+                        <p>Gained practical experience through course-driven projects and software tools. Knowledgeable in network protocols, system architecture, and IT infrastructure, with a focus on applying theoretical concepts to real-world scenarios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="col-md-6 col-sm-12" data-aos="fade-down" data-aos-duration="1000">
+                <div class="card mb-5 shadow-sm hover-scale">
+                    <div class="card-header has-icon">
+                        <i class="ti-pencil-alt text-danger"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">UI/UX Design</h5>
+                        <p>Passionate about creating intuitive, user-friendly interfaces and engaging digital experiences. Experienced in designing wireframes, prototypes, and interactive mockups using tools like Figma, Adobe XD, and Canva. Focused on enhancing usability, accessibility, and overall user satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IoT Development -->
+            <div class="col-md-6 col-sm-12" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="card mb-5 shadow-sm hover-scale">
+                    <div class="card-header has-icon">
+                        <i class="ti-signal text-danger"></i>
+                    </div>
+                    <div class="card-body px-4 py-3">
+                        <h5 class="mb-3 card-title text-dark">IoT Development</h5>
+                        <p>Experienced in building Internet of Things (IoT) solutions using microcontrollers and sensors. Skilled in integrating hardware and software to create smart, connected devices. Interested in developing automation, monitoring systems, and real-time data-driven applications.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Include AOS JS at the end of body -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true, // animations happen only once
+    mirror: false,
+  });
+</script>
+
+<!-- Optional CSS for hover scaling -->
+<style>
+.hover-scale:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
+</style>
+
+
+
+<!-- Portfolio Section -->
+<section class="section bg-custom-gray" id="portfolio">
+    <div class="container">
+        <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+
+        <!-- Tabs navigation -->
+        <ul class="nav nav-tabs" id="portfolioTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab">Development</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="iot-tab" data-bs-toggle="tab" data-bs-target="#iot" type="button" role="tab">IoT</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="networking-tab" data-bs-toggle="tab" data-bs-target="#networking" type="button" role="tab">Networking</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiux" type="button" role="tab">UI/UX</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab">ML</button>
+            </li>
+        </ul>
+
+        <!-- Tabs content -->
+        <div class="tab-content mt-4" id="portfolioTabContent">
+
+            <!-- Development Tab -->
+            <div class="tab-pane fade show active" id="development" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header bg-danger text-white">Flappy Bird</div>
+                    <div class="card-body">
+                        <p>Flappy Clone is a Flappy Bird replica developed to practice core game development concepts. Built using Unity, focusing on 2D physics, collision handling, UI design, and cross-platform logic.</p>
+                        <a href="https://fahim-sadik.itch.io/flappy-bird-clone" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-danger text-white">Console-Based Shopping App (C)</div>
+                    <div class="card-body">
+                        <p>A simple command-line shopping program built in C. Features menu-driven product browsing, quantity management, and receipt generation with discount and tax calculations.</p>
+                        <a href="https://github.com/fahimsadik/Console-Based-Shopping-App-Using-C" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IoT Tab -->
+            <div class="tab-pane fade" id="iot" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header bg-danger text-white">PCMEDI - Macro Controller</div>
+                    <div class="card-body">
+                        <p>Dual-Arduino macro system automating PC tasks via gesture and tactile inputs. Pro Micro handles HID, Uno handles sensors and joysticks. Smooth real-time control.</p>
+                        <a href="https://github.com/fahimsadik/PCMEDI" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-danger text-white">Arduino Projects</div>
+                    <div class="card-body">
+                        <p>Collection of basic Arduino projects including 7-Segment Clock, Keypad RFID Access Control, PIR Motion Sensor Utility.</p>
+                        <a href="https://github.com/fahimsadik/Basic-Arduino" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Networking Tab -->
+            <div class="tab-pane fade" id="networking" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header bg-danger text-white">Advanced IoT Projects</div>
+                    <div class="card-body">
+                        <p>Collection of IoT projects designed and tested, focusing on automation, cloud integration, real-time monitoring, and multi-device communication.</p>
+                        <a href="https://github.com/fahimsadik/Advance_IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UI/UX Tab -->
+            <div class="tab-pane fade" id="uiux" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header bg-danger text-white">Flappy Bird</div>
+                    <div class="card-body">
+                        <p>UI/UX design prototype in Figma for Flappy Bird interface.</p>
+                        <a href="https://www.figma.com/proto/JeKaD44qEz70EtXbEprPDr/Flappy-Bird-Clone" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-danger text-white">Portfolio</div>
+                    <div class="card-body">
+                        <p>UI/UX design prototype in Figma for my personal portfolio.</p>
+                        <a href="https://www.figma.com/proto/QS6MxNvgr5m9vfuYypeW4p/Portfolio" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ML Tab -->
+            <div class="tab-pane fade" id="ml" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header bg-danger text-white">Gaming Addiction Predictor</div>
+                    <div class="card-body">
+                        <p>Python ML app using SVC to predict gaming addiction risk and correlation with mental/physical health.</p>
+                        <a href="https://github.com/fahimsadik/Game_Addiction_predictor" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-danger text-white">Gaming Addiction Statistical Analysis</div>
+                    <div class="card-body">
+                        <p>Data analysis project using Python to study the impact of gaming addiction on students' health and performance.</p>
+                        <a href="https://github.com/fahimsadik/Gaming-Addiction-Statistical-Analysis" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Hover effect CSS -->
+<style>
+.card.hover-shadow {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+.card.hover-shadow:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+</style>
+
+<!-- AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true,
+  });
+
+  // Refresh AOS when switching tabs
+  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(tab => {
+      tab.addEventListener('shown.bs.tab', function () {
+          AOS.refresh();
+      });
+  });
+</script>
+
+
+
+    <!-- End of portfolio section -->
+
+    <section class="section" id="references">
+  <div class="container">
+    <h2 class="mb-5"><span class="text-danger">References</span></h2>
+
+    <div class="row">
+      <!-- Reference 1 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 rounded-3 mb-4 p-3 d-flex flex-row align-items-center">
+          <div class="me-3">
+            <img src="assets/imgs/Golam.jpg" alt="" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
+          </div>
+          <div>
+            <h5 class="mb-1">Prof. Muhammad Golam Kibria, PhD, SMIEEE</h5>
+            <p class="mb-0 text-muted">Professor & Department Head</p>
+			  <p class="mb-0 text-muted">Department of Computer Science and Engineering (CSE)</p>
+			  <p class="mb-0 text-muted">University Of Liberal Arts Bangladesh (ULAB)</p>
+            <p class="small mb-1"><i class="ti-email text-danger"></i> golam.kibria@ulab.edu.bd</p>
+            <!-- <p class="small mb-0"><i class="ti-mobile text-danger"></i> +880 1234-567890</p> --!>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference 2 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 rounded-3 mb-4 p-3 d-flex flex-row align-items-center">
+          <div class="me-3">
+            <img src="assets/imgs/kaviul.jpg" alt="Jane Smith" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
+          </div>
+          <div>
+            <h5 class="mb-1">Md Kaviul Hossain</h5>
+            <p class="mb-0 text-muted">Lecturer</p>
+			  <p class="mb-0 text-muted">Department of Computer Science and Engineering (CSE)</p>
+			  <p class="mb-0 text-muted">University Of Liberal Arts Bangladesh (ULAB)</p>
+            <p class="small mb-1"><i class="ti-email text-danger"></i> kavuil.hossain@ulab.edu.bd</p>
+            <p class="small mb-0"><i class="ti-mobile text-danger"></i> +88-02-223328001-5</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference 3 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 rounded-3 mb-4 p-3 d-flex flex-row align-items-center">
+          <div class="me-3">
+            <img src="assets/imgs/nazmul.jpg" alt="Robert Brown" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
+          </div>
+          <div>
+            <h5 class="mb-1">Md. Nazmul Abdal</h5>
+            <p class="mb-0 text-muted">Lecturer</p>
+			  <p class="mb-0 text-muted">Department of Computer Science and Engineering (CSE)</p>
+			  <p class="mb-0 text-muted">University Of Liberal Arts Bangladesh (ULAB)</p>
+            <p class="small mb-1"><i class="ti-email text-danger"></i> nazmul.abdal@ulab.edu.bd</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Reference 4 -->
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 rounded-3 mb-4 p-3 d-flex flex-row align-items-center">
+          <div class="me-3">
+            <img src="assets/imgs/papry.png" alt="Emily White" class="rounded-circle" style="width: 80px; height: 80px; object-fit: cover;">
+          </div>
+          <div>
+            <h5 class="mb-1">Afia Papry</h5>
+            <p class="mb-0 text-muted">Assistant Dietician</p>
+            <p class="mb-0 text-muted">ID: 26234309</p>
+			  <p class="mb-0 text-muted">BRB Hospital Limited.</p>
+			  
+            <p class="small mb-1"><i class="ti-email text-danger"></i> afiapapry@gmail.com</p>
+            <p class="small mb-0"><i class="ti-mobile text-danger"></i> +8801973798748</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+   <section class="section contact" id="contact">
+  <div class="container">
+    <!-- Section Title -->
+    <div class="row mb-5">
+      <div class="col text-center">
+        <h2 class="text-danger">Contacts</h2>
+        <p class="text-muted">Get in touch with me via the form or the info below</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- Contact Form -->
+      <div class="col-lg-8 mb-4">
+        <div class="contact-form-card p-4 rounded-3 shadow-sm" style="background-color: #fff0f0;">
+          <h4 class="contact-title mb-4">Send a message</h4>
+          <form id="contact-form">
+  <div class="form-group mb-3">
+    <input class="form-control" type="text" name="from_name" placeholder="Name *" required>
+  </div>
+
+  <div class="form-group mb-3">
+    <!-- Corrected name to from_email -->
+    <input class="form-control" type="email" name="from_email" placeholder="Email *" required>
+  </div>
+
+  <div class="form-group mb-3">
+    <!-- Added subject field -->
+    <input class="form-control" type="text" name="subject" placeholder="Subject *" required>
+  </div>
+
+  <div class="form-group mb-3">
+    <textarea class="form-control" name="message" placeholder="Message *" rows="7" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="form-control btn btn-danger">Send Message</button>
+  </div>
+</form>
+
+          <p id="form-status" class="mt-2 text-success"></p>
+        </div>
+      </div>
+
+      <!-- Contact Info + Socials -->
+      <div class="col-lg-4">
+        <div class="contact-info-card p-4 rounded-3 shadow-sm" style="background-color: #fff0f0;">
+          <h4 class="contact-title mb-4">Get in touch</h4>
+
+          <div class="row mb-3 align-items-center">
+            <div class="col-1 pt-1 mr-1">
+              <i class="ti-mobile icon-md text-danger"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="d-inline">Phone : <br> <span class="text-muted">+880 1890 244471</span></h6>
+            </div>
+          </div>
+
+          <div class="row mb-3 align-items-center">
+            <div class="col-1 pt-1 mr-1">
+              <i class="ti-map-alt icon-md text-danger"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="d-inline">Address :<br> <span class="text-muted">44/T Mitaly Road, Zigatola, Dhanmondi, Dhaka-1205, Bangladesh.</span></h6>
+            </div>
+          </div>
+
+          <div class="row mb-3 align-items-center">
+            <div class="col-1 pt-1 mr-1">
+              <i class="ti-envelope icon-md text-danger"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="d-inline">Email :<br> <span class="text-muted">fahimsadik9@gmail.com</span></h6>
+            </div>
+          </div>
+
+          <div class="row mb-3 align-items-center">
+            <div class="col-1 pt-1 mr-1">
+              <i class="ti-world icon-md text-danger"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="d-inline">Website :<br> <span class="text-muted">https://unit.link/fahim-sadik</span></h6>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icons pt-3 d-flex flex-wrap gap-2">
+            <a href="https://www.facebook.com/fahimsadikbabu/" target="_blank"><i class="ti-facebook"></i></a>
+            <a href="https://x.com/FahimSadik82927" target="_blank"><i class="ti-twitter"></i></a>
+            <a href="mailto:fahimsadik9@gmail.com"><i class="ti-email"></i></a>
+            <a href="https://www.instagram.com/mr._great_guy/" target="_blank"><i class="ti-instagram"></i></a>
+            <a href="https://github.com/fahimsadik" target="_blank"><i class="ti-github"></i></a>
+            <a href="https://www.linkedin.com/in/fahim-sadik-143795182" target="_blank"><i class="ti-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+   (function(){
+       emailjs.init("Fahim Sadik");
+   })();
+
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+       emailjs.sendForm('service_gxb7dma', 'template_8h4f255', this)
+           .then(function() {
+               document.getElementById('form-status').innerText = "Message sent successfully!";
+               document.getElementById('contact-form').reset();
+           }, function(error) {
+               document.getElementById('form-status').innerText = "Failed to send message. Try again.";
+               console.error('EmailJS error:', error);
+           });
+   });
+</script>
+
+
+                        
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With DreamWeaver By Fahim Sadik
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+
+    <!-- fahimsadik js -->
+    <script src="assets/js/fahimsadik.js"></script>
+	
+	<script type="text/javascript">
+  (function() {
+    emailjs.init("nDW_fmbHfQPvq8itx"); // Replace with your EmailJS Public Key
+  })();
+
+  window.onload = function() {
+    document.querySelector("form").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Send form
+      emailjs.sendForm("service_gxb7dma", "template_8h4f255", this)
+        .then(function() {
+          alert("Message sent successfully!");
+        }, function(error) {
+          alert("Failed to send message: " + JSON.stringify(error));
+        });
+    });
+  };
+</script>
+	<script>
+const textArray = [
+  "Game Developer",
+  "UI/UX Designer",
+  "IoT Developer",
+  "Network Engineer"
+];
+
+let typingElement = document.getElementById("typing");
+let arrayIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 50; // typing speed in ms
+let deletingSpeed = 50; // deleting speed in ms
+let delayBetweenWords = 1000; // delay before deleting
+
+function typeEffect() {
+  let currentText = textArray[arrayIndex];
+  
+  if (isDeleting) {
+    typingElement.textContent = currentText.substring(0, charIndex--);
+    if (charIndex < 0) {
+      isDeleting = false;
+      arrayIndex = (arrayIndex + 1) % textArray.length;
+    }
+  } else {
+    typingElement.textContent = currentText.substring(0, charIndex++);
+    if (charIndex > currentText.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, delayBetweenWords);
+      return;
+    }
+  }
+  
+  setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+}
+
+typeEffect();
+</script>
+
+
+
+</body>
+</html>
