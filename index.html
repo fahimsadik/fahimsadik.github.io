@@ -711,36 +711,58 @@ function printResume() {
 
     <div class="row">
       <!-- Contact Form -->
-      <div class="col-lg-8 mb-4">
-        <div class="contact-form-card p-4 rounded-3 shadow-sm" style="background-color: #fff0f0;">
-          <h4 class="contact-title mb-4">Send a message</h4>
-          <form id="contact-form">
-  <div class="form-group mb-3">
-    <input class="form-control" type="text" name="from_name" placeholder="Name *" required>
-  </div>
-
-  <div class="form-group mb-3">
-    <!-- Corrected name to from_email -->
-    <input class="form-control" type="email" name="from_email" placeholder="Email *" required>
-  </div>
-
-  <div class="form-group mb-3">
-    <!-- Added subject field -->
-    <input class="form-control" type="text" name="subject" placeholder="Subject *" required>
-  </div>
-
-  <div class="form-group mb-3">
-    <textarea class="form-control" name="message" placeholder="Message *" rows="7" required></textarea>
-  </div>
-
-  <div class="form-group">
-    <button type="submit" class="form-control btn btn-danger">Send Message</button>
-  </div>
-</form>
-
-          <p id="form-status" class="mt-2 text-success"></p>
-        </div>
+<div class="col-lg-8 mb-4">
+  <div class="contact-form-card p-4 rounded-3 shadow-sm" style="background-color: #fff0f0;">
+    <h4 class="contact-title mb-4">Send a message</h4>
+    <form id="contact-form">
+      <div class="form-group mb-3">
+        <input class="form-control" type="text" name="from_name" placeholder="Name *" required>
       </div>
+
+      <div class="form-group mb-3">
+        <input class="form-control" type="email" name="from_email" placeholder="Email *" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <input class="form-control" type="text" name="subject" placeholder="Subject *" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <textarea class="form-control" name="message" placeholder="Message *" rows="7" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" class="form-control btn btn-danger">Send Message</button>
+      </div>
+    </form>
+
+    <!-- Status message -->
+    <p id="form-status" class="mt-2"></p>
+  </div>
+</div>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+   (function(){
+       emailjs.init("YOUR_PUBLIC_KEY"); // e.g. 'hVZzE3t9_xxxxx'
+   })();
+
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+       emailjs.sendForm('service_gxb7dma', 'template_8h4f255', this)
+           .then(function() {
+               document.getElementById('form-status').innerText = "✅ Message sent successfully!";
+               document.getElementById('form-status').style.color = "green";
+               document.getElementById('contact-form').reset();
+           }, function(error) {
+               document.getElementById('form-status').innerText = "❌ Failed to send message. Try again.";
+               document.getElementById('form-status').style.color = "red";
+               console.error('EmailJS error:', error);
+           });
+   });
+</script>
+
 
       <!-- Contact Info + Socials -->
       <div class="col-lg-4">
@@ -802,7 +824,7 @@ function printResume() {
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
    (function(){
-       emailjs.init("Fahim Sadik");
+       emailjs.init("nDW_fmbHfQPvq8itx");
    })();
 
    document.getElementById('contact-form').addEventListener('submit', function(event) {
