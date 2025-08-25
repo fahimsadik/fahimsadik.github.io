@@ -449,7 +449,6 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
 </style>
 
 
-
 <!-- Portfolio Section -->
 <section class="section bg-custom-gray" id="portfolio">
     <div class="container">
@@ -458,13 +457,13 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
         <!-- Tabs navigation -->
         <ul class="nav nav-tabs" id="portfolioTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="dev-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab">Development</button>
+                <button class="nav-link active" id="game-dev-tab" data-bs-toggle="tab" data-bs-target="#game-development" type="button" role="tab">Game Development</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="dev-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab">Development</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="iot-tab" data-bs-toggle="tab" data-bs-target="#iot" type="button" role="tab">IoT</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="networking-tab" data-bs-toggle="tab" data-bs-target="#networking" type="button" role="tab">Networking</button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="uiux-tab" data-bs-toggle="tab" data-bs-target="#uiux" type="button" role="tab">UI/UX</button>
@@ -477,8 +476,8 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
         <!-- Tabs content -->
         <div class="tab-content mt-4" id="portfolioTabContent">
 
-            <!-- Development Tab -->
-            <div class="tab-pane fade show active" id="development" role="tabpanel">
+            <!-- Game Development Tab -->
+            <div class="tab-pane fade show active" id="game-development" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-header bg-danger text-white">Flappy Bird</div>
                     <div class="card-body">
@@ -487,13 +486,24 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
                     </div>
                 </div>
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header bg-danger text-white">Medieval Castle Environment – Unreal Engine</div>
+                    <div class="card-body">
+                        <p>Designed and developed a 3D medieval environment in Unreal Engine featuring castles, wildlife AI , and a realistic landscape with advanced lighting and foliage systems.</p>
+                        <a href="https://www.youtube.com/watch?v=yL-_SJKCvcY&ab_channel=FahimSadik" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Development Tab -->
+            <div class="tab-pane fade" id="development" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
                     <div class="card-header bg-danger text-white">Console-Based Shopping App (C)</div>
                     <div class="card-body">
                         <p>A simple command-line shopping program built in C. Features menu-driven product browsing, quantity management, and receipt generation with discount and tax calculations.</p>
                         <a href="https://github.com/fahimsadik/Console-Based-Shopping-App-Using-C" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
-				<div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
                     <div class="card-header bg-danger text-white">Console-Based Shopping App (CPP)</div>
                     <div class="card-body">
                         <p>A more advanced C++ console application for a multi-user shop. It features separate roles for customers, sellers, and admins, and uses file I/O for persistent storage of products, users, and sales data.</p>
@@ -518,30 +528,17 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
                         <a href="https://github.com/fahimsadik/Basic-Arduino" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
-				
-				<div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="300">
                     <div class="card-header bg-danger text-white">Basic IoT Projects</div>
                     <div class="card-body">
-                        <p>A collection of beginner and Advanced-level IoT projects that I have personally designed and tested. Each project focuses on simple automation, sensor data collection along with cloud integration, realtime data monitoring, Device Automation, and multi-device communication</p>
+                        <p>A collection of beginner and advanced IoT projects. Focused on automation, sensor data collection, cloud integration, real-time monitoring, device automation, and multi-device communication.</p>
                         <a href="https://github.com/fahimsadik/Basic-IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
-				
-				<div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="400">
                     <div class="card-header bg-danger text-white">Advanced IoT Projects</div>
                     <div class="card-body">
-                        <p>Collection of IoT projects designed and tested, focusing on automation, cloud integration, real-time monitoring, and multi-device communication.</p>
-                        <a href="https://github.com/fahimsadik/Advance_IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Networking Tab -->
-            <div class="tab-pane fade" id="networking" role="tabpanel">
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-header bg-danger text-white">Advanced IoT Projects</div>
-                    <div class="card-body">
-                        <p>Collection of IoT projects designed and tested, focusing on automation, cloud integration, real-time monitoring, and multi-device communication.</p>
+                        <p>Collection of advanced IoT projects focusing on automation, cloud integration, real-time monitoring, and multi-device communication.</p>
                         <a href="https://github.com/fahimsadik/Advance_IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
@@ -550,14 +547,14 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
             <!-- UI/UX Tab -->
             <div class="tab-pane fade" id="uiux" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-header bg-danger text-white">Flappy Bird</div>
+                    <div class="card-header bg-danger text-white">Flappy Bird UI/UX</div>
                     <div class="card-body">
                         <p>UI/UX design prototype in Figma for Flappy Bird interface.</p>
                         <a href="https://www.figma.com/proto/JeKaD44qEz70EtXbEprPDr/Flappy-Bird-Clone" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-header bg-danger text-white">Portfolio</div>
+                    <div class="card-header bg-danger text-white">Portfolio UI/UX</div>
                     <div class="card-body">
                         <p>UI/UX design prototype in Figma for my personal portfolio.</p>
                         <a href="https://www.figma.com/proto/QS6MxNvgr5m9vfuYypeW4p/Portfolio" class="btn btn-outline-danger" target="_blank">View Project</a>
@@ -619,8 +616,6 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
 </script>
 
 
-
-    <!-- End of portfolio section -->
 
     <section class="section" id="references">
   <div class="container">
