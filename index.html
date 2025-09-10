@@ -460,6 +460,9 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
                 <button class="nav-link active" id="game-dev-tab" data-bs-toggle="tab" data-bs-target="#game-development" type="button" role="tab">Game Development</button>
             </li>
             <li class="nav-item" role="presentation">
+                <button class="nav-link" id="networking-tab" data-bs-toggle="tab" data-bs-target="#networking" type="button" role="tab">Networking</button>
+            </li>
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="dev-tab" data-bs-toggle="tab" data-bs-target="#development" type="button" role="tab">Development</button>
             </li>
             <li class="nav-item" role="presentation">
@@ -471,14 +474,36 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="ml-tab" data-bs-toggle="tab" data-bs-target="#ml" type="button" role="tab">ML</button>
             </li>
+            
         </ul>
 
         <!-- Tabs content -->
         <div class="tab-content mt-4" id="portfolioTabContent">
 
+          <!-- Networking Tab -->
+            <div class="tab-pane fade" id="networking" role="tabpanel">
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/network1.png" class="card-img-top" alt="Networking Project Screenshot">
+                    <div class="card-header bg-danger text-white">Network Packet Analyzer</div>
+                    <div class="card-body">
+                        <p>Python-based network packet analyzer that captures and analyzes traffic to detect anomalies and generate reports.</p>
+                        <a href="https://github.com/fahimsadik/Network-Packet-Analyzer" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/network2.png" class="card-img-top" alt="Networking Project Screenshot">
+                    <div class="card-header bg-danger text-white">LAN Monitoring Dashboard</div>
+                    <div class="card-body">
+                        <p>Real-time LAN monitoring system built with Node.js and Socket.IO to visualize device status and network performance metrics.</p>
+                        <a href="https://github.com/fahimsadik/LAN-Monitoring-Dashboard" class="btn btn-outline-danger" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
             <!-- Game Development Tab -->
             <div class="tab-pane fade show active" id="game-development" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/flappy.png" class="card-img-top" alt="Flappy Bird Screenshot">
                     <div class="card-header bg-danger text-white">Flappy Bird</div>
                     <div class="card-body">
                         <p>Flappy Clone is a Flappy Bird replica developed to practice core game development concepts. Built using Unity, focusing on 2D physics, collision handling, UI design, and cross-platform logic.</p>
@@ -486,6 +511,7 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
                     </div>
                 </div>
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/castle.png" class="card-img-top" alt="Medieval Castle Screenshot">
                     <div class="card-header bg-danger text-white">Medieval Castle Environment – Unreal Engine</div>
                     <div class="card-body">
                         <p>Designed and developed a 3D medieval environment in Unreal Engine featuring castles, wildlife AI , and a realistic landscape with advanced lighting and foliage systems.</p>
@@ -497,6 +523,7 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
             <!-- Development Tab -->
             <div class="tab-pane fade" id="development" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/console_c.png" class="card-img-top" alt="C Shopping App Screenshot">
                     <div class="card-header bg-danger text-white">Console-Based Shopping App (C)</div>
                     <div class="card-body">
                         <p>A simple command-line shopping program built in C. Features menu-driven product browsing, quantity management, and receipt generation with discount and tax calculations.</p>
@@ -504,6 +531,7 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
                     </div>
                 </div>
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/console_cpp.png" class="card-img-top" alt="C++ Shopping App Screenshot">
                     <div class="card-header bg-danger text-white">Console-Based Shopping App (CPP)</div>
                     <div class="card-body">
                         <p>A more advanced C++ console application for a multi-user shop. It features separate roles for customers, sellers, and admins, and uses file I/O for persistent storage of products, users, and sales data.</p>
@@ -514,75 +542,78 @@ const pdfPath = "assets/resume/Resume_of_Fahim_Sadik.pdf";
 
             <!-- IoT Tab -->
             <div class="tab-pane fade" id="iot" role="tabpanel">
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-header bg-danger text-white">PCMEDI - Macro Controller</div>
-                    <div class="card-body">
-                        <p>Dual-Arduino macro system automating PC tasks via gesture and tactile inputs. Pro Micro handles HID, Uno handles sensors and joysticks. Smooth real-time control.</p>
-                        <a href="https://github.com/fahimsadik/PCMEDI" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
+              <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/pcmedi.png" class="card-img-top" alt="PCMEDI Screenshot">
+                <div class="card-header bg-danger text-white">PCMEDI - Macro Controller</div>
+                <div class="card-body">
+                  <p>Dual-Arduino macro system automating PC tasks via gesture and tactile inputs. Pro Micro handles HID, Uno
+                    handles sensors and joysticks. Smooth real-time control.</p>
+                  <a href="https://github.com/fahimsadik/PCMEDI" class="btn btn-outline-danger" target="_blank">View Project</a>
                 </div>
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-header bg-danger text-white">Arduino Projects</div>
-                    <div class="card-body">
-                        <p>Collection of basic Arduino projects including 7-Segment Clock, Keypad RFID Access Control, PIR Motion Sensor Utility.</p>
-                        <a href="https://github.com/fahimsadik/Basic-Arduino" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
+              </div>
+              <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/pcmedi.png" class="card-img-top" alt="PCMEDI Screenshot">
+                <div class="card-header bg-danger text-white">Arduino Projects</div>
+                <div class="card-body">
+                  <p>Collection of basic Arduino projects including 7-Segment Clock, Keypad RFID Access Control, PIR Motion Sensor
+                    Utility.</p>
+                  <a href="https://github.com/fahimsadik/Basic-Arduino" class="btn btn-outline-danger" target="_blank">View
+                    Project</a>
                 </div>
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-header bg-danger text-white">Basic IoT Projects</div>
-                    <div class="card-body">
-                        <p>A collection of beginner and advanced IoT projects. Focused on automation, sensor data collection, cloud integration, real-time monitoring, device automation, and multi-device communication.</p>
-                        <a href="https://github.com/fahimsadik/Basic-IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
+              </div>
+              <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/pcmedi.png" class="card-img-top" alt="PCMEDI Screenshot">
+                <div class="card-header bg-danger text-white">Basic IoT Projects</div>
+                <div class="card-body">
+                  <p>A collection of beginner and advanced IoT projects. Focused on automation, sensor data collection, cloud
+                    integration, real-time monitoring, device automation, and multi-device communication.</p>
+                  <a href="https://github.com/fahimsadik/Basic-IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
                 </div>
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-header bg-danger text-white">Advanced IoT Projects</div>
-                    <div class="card-body">
-                        <p>Collection of advanced IoT projects focusing on automation, cloud integration, real-time monitoring, and multi-device communication.</p>
-                        <a href="https://github.com/fahimsadik/Advance_IoT" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
+              </div>
+              <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/pcmedi.png" class="card-img-top" alt="PCMEDI Screenshot">
+                <div class="card-header bg-danger text-white">Advanced IoT Projects</div>
+                <div class="card-body">
+                  <p>Collection of advanced IoT projects focusing on automation, cloud integration, real-time monitoring, and
+                    multi-device communication.</p>
+                  <a href="https://github.com/fahimsadik/Advance_IoT" class="btn btn-outline-danger" target="_blank">View
+                    Project</a>
                 </div>
+              </div>
             </div>
 
             <!-- UI/UX Tab -->
             <div class="tab-pane fade" id="uiux" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/flappy_ui.png" class="card-img-top" alt="Flappy Bird UI/UX Screenshot">
                     <div class="card-header bg-danger text-white">Flappy Bird UI/UX</div>
                     <div class="card-body">
                         <p>UI/UX design prototype in Figma for Flappy Bird interface.</p>
                         <a href="https://www.figma.com/proto/JeKaD44qEz70EtXbEprPDr/Flappy-Bird-Clone" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-header bg-danger text-white">Portfolio UI/UX</div>
-                    <div class="card-body">
-                        <p>UI/UX design prototype in Figma for my personal portfolio.</p>
-                        <a href="https://www.figma.com/proto/QS6MxNvgr5m9vfuYypeW4p/Portfolio" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
-                </div>
+                <!-- Repeat other UI/UX cards with images -->
             </div>
 
             <!-- ML Tab -->
             <div class="tab-pane fade" id="ml" role="tabpanel">
                 <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/gaming_ml.png" class="card-img-top" alt="Gaming Addiction Predictor Screenshot">
                     <div class="card-header bg-danger text-white">Gaming Addiction Predictor</div>
                     <div class="card-body">
                         <p>Python ML app using SVC to predict gaming addiction risk and correlation with mental/physical health.</p>
                         <a href="https://github.com/fahimsadik/Game_Addiction_predictor" class="btn btn-outline-danger" target="_blank">View Project</a>
                     </div>
                 </div>
-                <div class="card mb-3 hover-shadow" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-header bg-danger text-white">Gaming Addiction Statistical Analysis</div>
-                    <div class="card-body">
-                        <p>Data analysis project using Python to study the impact of gaming addiction on students' health and performance.</p>
-                        <a href="https://github.com/fahimsadik/Gaming-Addiction-Statistical-Analysis" class="btn btn-outline-danger" target="_blank">View Project</a>
-                    </div>
-                </div>
+                <!-- Repeat other ML cards with images -->
             </div>
+
+            
 
         </div>
     </div>
 </section>
+
 
 <!-- Hover effect CSS -->
 <style>
